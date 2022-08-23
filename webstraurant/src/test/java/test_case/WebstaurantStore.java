@@ -62,39 +62,8 @@ public class WebstaurantStore {
         Thread.sleep(5000);
         cartItemCount = driver.findElement(By.xpath("//span[@id='cartItemCountSpan']"));
         Assertions.assertEquals("0", cartItemCount.getText());
-
-
-
-
-
-//        for(WebElement table: searchElements) {
-//
-//            String tableResult = table.getText();
-//
-//            if	(tableResult.contains("table"))
-//
-//                System.out.println(tableResult);
-//        }
-//
-//
-//
-////		WebElement searchButton = driver.findElement(By.xpath("//button[contains(text(), \"Search\")]"));
-////
-////		searchButton.click();
-////		Thread.sleep(5000);
-//
-////		WebElement cart =  driver.findElement(By.xpath("//span[contains(text(),'Cart')]"));
-////		cart.click();
-//
-//
-//
-//
-//
-//
-//
-//        System.out.println(driver.getTitle());
-//
-//        //driver.quit();
+        
+        driver.quit();
 
 
 
